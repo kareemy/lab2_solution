@@ -16,7 +16,7 @@ Need Help? Don't hesitate to reach out -
 ## Task 1
 This repository does not have any starting code. You must create a new C# console application from the Terminal.
 1. From the VS Code Terminal, type `dotnet new console`. Make sure you are in the correct folder.
-2. Click on the newly created `Program.cs` file in VS Code, wait a few seconds, and click Yrd on the popup asking you to Add "Required assets to build and debug".
+2. Click on the newly created `Program.cs` file in VS Code, wait a few seconds, and click Yes on the popup asking you to Add "Required assets to build and debug".
 
 ## Task 2
 1. Create a new file in the same folder as `Program.cs` called `Widget.cs`. This file is your class. It will be empty initially.
