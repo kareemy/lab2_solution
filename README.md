@@ -43,29 +43,32 @@ This repository does not have any starting code. You must create a new C# consol
       public class Widget
       {
           public int WidgetId {get; set;}
-          public string Name {get; set;}
+          public string Name {get; set;} = string.Empty;
       }
   }
   ```
 
 ## Task 4
-1. In `Main` in `Program.cs`, create a new object from the Widget class:
+1. In 'Program.cs', bring in your Widget class namespace with the `using` keyword:
+```
+using lab2_starter;
+```
+2. In `Program.cs`, create a new object from the Widget class:
 ```
 Widget widgetOne = new Widget();
 ```
-2. Give `widgetOne` a name and display that name to the console.
+3. Give `widgetOne` a name and display that name to the console.
 ```
 widgetOne.Name = "Example Name";
 Console.WriteLine($"widgetOne.Name = {widgetOne.Name}");
 ```
-3. Create a second widget, give it a different name, and print it out to the console.
+4. Create a second widget, give it a different name, and print it out to the console.
 
 ## Task 4
-Notice how each cs file has a namespace. Right now the namespace always matches the name of your program but it doesn't have to. When our projects get more complex it is helpful to use different namespaces for different classes to better organize your code.
+In larger applications, it can be helpful to have a hierarchy of namespaces. Right now `Widget.cs` has a namespace of `lab2_starter`. You can further separate namespaces within an application using the dot operator.
 1. Change the namespace of the Widget class to `lab2_starter.Models`.
 2. Notice how `Program.cs` now has errors. It can't find the Widget class anymore because it is in a different namespace. You need to use the `using` directive to bring in your Widget class.
-3. Near the top of `Program.cs` on Line 2, right under `using System;` add a second using directive:
-`using lab2_starter.Models;`
+3. Change the `using` directive in `Program.cs` to bring in the new namespace.
 
 ## Task 5
 1. Save your program and run it. At the terminal prompt, type `dotnet run`.
