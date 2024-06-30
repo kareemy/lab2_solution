@@ -1,4 +1,4 @@
-## Your Name: 
+## Your Name: SOLUTION
 
 # CIDM 3312 Lab 2: Review of Lists
 
@@ -46,7 +46,7 @@ Answer the following question by typing your answers right here in `README.md`.
 
 1. What is the difference between a `for` loop and a `foreach` loop?
 
-    **Replace this text with your response.**
+    **A foreach loop is read-only and uses a different syntax than a for loop. A for loop uses the array bracket syntax and can read and write a list. The foreach loop is recommended and less error-prone.**
 
 ## Task 8
 1. Save your program and run it. At the terminal prompt, type `dotnet run`.
